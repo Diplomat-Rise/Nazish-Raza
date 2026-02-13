@@ -38,11 +38,11 @@ function downloadVCard() {
   const vCardData = `
 BEGIN:VCARD
 VERSION:3.0
-FN:MEHRAN SIDDIQUE
-TITLE:ACCOUNTANT
-ORG:Business Links
-TEL;TYPE=WORK,VOICE:+971586412055
-EMAIL:businesslink52@gmail.com
+FN:Nazish Raza
+TITLE:Business Consultant
+ORG:Business Links Consultancies
+TEL;TYPE=WORK,VOICE:+971521795206
+EMAIL:info@businessdab.com
 URL:https://businessdxb.com/
 
 END:VCARD
@@ -53,7 +53,7 @@ END:VCARD
 
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'MEHRAN SIDDIQUE.vcf';
+  a.download = 'Nazish Raza.vcf';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -64,4 +64,5 @@ document.querySelector('.save-contact-button').addEventListener('click', functio
   e.preventDefault();
   downloadVCard();
 });
+
 
